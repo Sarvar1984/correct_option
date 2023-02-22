@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/only_securdb
+    username: postgres
+    password: St@rt123
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+jwt:
+  public:
+    key: classpath:pub.key
+  private:
+    key: classpath:pri.key
